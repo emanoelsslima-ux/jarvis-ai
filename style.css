@@ -35,22 +35,23 @@
 
 /* INPUT */
 
-.stChatInput input {
-    background: rgba(255,255,255,0.04);
-
-    border: 1px solid cyan;
-
-    color: white;
-
-    border-radius: 20px;
-
-    padding: 10px;
+.stChatInput div[data-baseweb="textarea"] {
+    border-color: transparent !important;
+    box-shadow: none !important;
 }
 
-.stChatInput input:focus {
-    border: 1px solid cyan;
+.stChatInput:focus-within > div {
+    border-color: #007BFF !important;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.3) !important;
+}
 
-    box-shadow: 0 0 10px cyan;
+.stChatInput button {
+    background-color: #007BFF !important;
+    color: white !important;
+}
+
+.stChatInput button:hover {
+    background-color: #0056b3 !important;
 }
 
 /* TITULO */

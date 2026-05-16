@@ -17,7 +17,7 @@ Assistente virtual futurista desenvolvido com Python, Streamlit e Groq API.
 
 ## 📸 Preview
 
-![Interface do Jarvis-AI](assets/jarvis.jpg)
+![Interface do Jarvis-AI](preview.png)
 
 ---
 
