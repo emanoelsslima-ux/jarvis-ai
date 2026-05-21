@@ -4,7 +4,6 @@ Assistente virtual futurista desenvolvido com Python, Streamlit e integração c
 O projeto simula um assistente pessoal inteligente com memória conversacional, interface moderna e respostas em tempo real através de modelos LLM.
 
 **Demo Online:** https://jarvis-ai-emanoelux.streamlit.app/
-💻 Projeto em produção com IA generativa
 
 ---
 
