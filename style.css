@@ -1,77 +1,81 @@
+/* Configuração global e fundo com um degradê sutil e dinâmico */
 .stApp {
-    background-color: #030712;
-
-    background-image:
-        radial-gradient(circle at 20% 20%, rgba(0,255,255,0.15), transparent 25%),
-        radial-gradient(circle at 80% 30%, rgba(0,150,255,0.12), transparent 25%),
-        radial-gradient(circle at 50% 80%, rgba(0,255,200,0.10), transparent 25%);
-
-    color: white;
+    background: radial-gradient(circle at 50% 30%, #1a233a 0%, #0d1117 100%) !important;
+    color: #f0f4f8 !important;
+    font-family: 'Inter', 'Segoe UI', sans-serif !important;
 }
 
-/* MENSAGENS */
-
-.stChatMessage {
-    background: rgba(255,255,255,0.04);
-
-    border: 1px solid rgba(0,255,255,0.15);
-
-    border-radius: 20px;
-
-    backdrop-filter: blur(20px);
-
-    padding: 12px;
-
-    box-shadow: 0 0 15px rgba(0,255,255,0.05);
-
-    animation: fadeIn 0.3s ease-in-out;
+/* Centralização do container principal */
+.main .block-container {
+    max-width: 800px !important;
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
 }
 
-.stChatMessage:hover {
-    border: 1px solid cyan;
-
-    transition: 0.3s;
+/* Estilização do Título "Jarvis AI" (Adeus neon pesado, olá minimalismo tech) */
+h1, .stHeading {
+    font-weight: 800 !important;
+    letter-spacing: 2px !important;
+    text-transform: uppercase !important;
+    background: linear-gradient(45deg, #00f2fe, #4facfe) !important;
+    
+    /* Versão para Chrome, Safari, Edge e novos Firefox */
+    -webkit-background-clip: text !important;
+    
+    /* Versão padrão oficial (resolve o aviso do editor) */
+    background-clip: text !important;
+    
+    -webkit-text-fill-color: transparent !important;
+    text-shadow: 0 0 20px rgba(0, 242, 254, 0.2) !important;
+    margin-top: 1rem !important;
 }
 
-/* INPUT */
-
-.stChatInput div[data-baseweb="textarea"] {
-    border-color: transparent !important;
-    box-shadow: none !important;
+/* Subtítulo / Boas-vindas */
+p, .stText {
+    color: #8b9bb4 !important;
+    font-weight: 300 !important;
+    letter-spacing: 0.5px !important;
 }
 
-.stChatInput:focus-within > div {
-    border-color: #007BFF !important;
-    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.3) !important;
+/* Imagem Central (Suavizando as bordas e adicionando um brilho sutil) */
+img, [data-testid="stImage"] {
+    border-radius: 16px !important;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37) !important;
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+    transition: transform 0.3s ease !important;
+}
+img:hover {
+    transform: scale(1.02) !important;
 }
 
-.stChatInput button {
-    background-color: #007BFF !important;
-    color: white !important;
+/* Customização da Barra de Input (Efeito Glassmorphism / Vidro) */
+div[data-testid="stChatInput"] {
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    background: rgba(22, 28, 45, 0.6) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    border-radius: 14px !important;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2) !important;
+    padding: 6px !important;
+    bottom: 2rem !important;
 }
 
-.stChatInput button:hover {
-    background-color: #0056b3 !important;
+/* Foco e escrita dentro do Input */
+div[data-testid="stChatInput"] textarea {
+    color: #ffffff !important;
+    font-size: 1rem !important;
 }
 
-/* TITULO */
-
-h1 {
-    text-shadow:
-        0 0 5px rgba(0,255,255,0.5);
+/* Botão de Enviar (O ícone da setinha) */
+div[data-testid="stChatInput"] button {
+    background-color: #00f2fe !important;
+    color: #0d1117 !important;
+    border-radius: 10px !important;
+    transition: all 0.2s ease !important;
 }
 
-/* ANIMAÇÃO */
-
-@keyframes fadeIn {
-
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0px);
-    }
+div[data-testid="stChatInput"] button:hover {
+    background-color: #4facfe !important;
+    box-shadow: 0 0 15px rgba(0, 242, 254, 0.5) !important;
+    transform: translateY(-1px) !important;
 }
