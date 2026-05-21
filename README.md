@@ -69,16 +69,6 @@ GROQ_API_KEY=SUA_CHAVE_AQUI
 
 ---
 
-## Preview
-
-### Interface principal
-
-<p align="center">
-  <img src="assets/preview.png" width="800"/>
-</p>
-
----
-
 ### Demonstração do projeto
 
 <p align="center">
