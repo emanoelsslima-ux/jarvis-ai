@@ -3,6 +3,9 @@
 Assistente virtual futurista desenvolvido com Python, Streamlit e integração com IA generativa utilizando a Groq API.  
 O projeto simula um assistente pessoal inteligente com memória conversacional, interface moderna e respostas em tempo real através de modelos LLM.
 
+**Demo Online:** https://jarvis-ai-emanoelux.streamlit.app/
+💻 Projeto em produção com IA generativa
+
 ---
 
 ## Tecnologias utilizadas
